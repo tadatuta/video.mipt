@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect');
 
 gulp.task('stylus', function() {
-	gulp.src('./stylus/*.styl')
+	gulp.src('./stylus/**/*.styl')
 		.pipe(stylus({
 			'include css': true,
 			use: [nib()]

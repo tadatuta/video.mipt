@@ -1,0 +1,174 @@
+.row {
+  width: 960px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col-1 {
+  width: 50px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-1 {
+  padding-left: 80px;
+}
+.col-suffix-1 {
+  padding-right: 80px;
+}
+.col-2 {
+  width: 130px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-2 {
+  padding-left: 160px;
+}
+.col-suffix-2 {
+  padding-right: 160px;
+}
+.col-3 {
+  width: 210px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-3 {
+  padding-left: 240px;
+}
+.col-suffix-3 {
+  padding-right: 240px;
+}
+.col-4 {
+  width: 290px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-4 {
+  padding-left: 320px;
+}
+.col-suffix-4 {
+  padding-right: 320px;
+}
+.col-5 {
+  width: 370px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-5 {
+  padding-left: 400px;
+}
+.col-suffix-5 {
+  padding-right: 400px;
+}
+.col-6 {
+  width: 450px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-6 {
+  padding-left: 480px;
+}
+.col-suffix-6 {
+  padding-right: 480px;
+}
+.col-7 {
+  width: 530px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-7 {
+  padding-left: 560px;
+}
+.col-suffix-7 {
+  padding-right: 560px;
+}
+.col-8 {
+  width: 610px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-8 {
+  padding-left: 640px;
+}
+.col-suffix-8 {
+  padding-right: 640px;
+}
+.col-9 {
+  width: 690px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-9 {
+  padding-left: 720px;
+}
+.col-suffix-9 {
+  padding-right: 720px;
+}
+.col-10 {
+  width: 770px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-10 {
+  padding-left: 800px;
+}
+.col-suffix-10 {
+  padding-right: 800px;
+}
+.col-11 {
+  width: 850px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-11 {
+  padding-left: 880px;
+}
+.col-suffix-11 {
+  padding-right: 880px;
+}
+.col-12 {
+  width: 930px;
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.col-prefix-12 {
+  padding-left: 960px;
+}
+.col-suffix-12 {
+  padding-right: 960px;
+}
+.menu {
+  background-color: #0069b3;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.menu__item {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+  margin-right: 88px;
+}
+.menu__item:last-of-type {
+  margin: 0;
+}
