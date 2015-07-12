@@ -2,33 +2,32 @@
 	background-color: $color-blue
 	color: $color-main
 
-	margin: 0
-	padding: 0 auto
+	&__list
+		grid-row()
+		grid-col: 12
 
-	clearfix()
+		&__item
+			box-sizing: border-box
+			display: inline-block
+			list-style: none
+			position: relative
+			float: left
 
-	&__item
-		box-sizing: border-box
-		display: inline-block
-		list-style: none
-		position: relative
-		float: left
+			text-transform: uppercase
+			font-size: 13px
+			font-weight: bold
 
-		text-transform: uppercase
-		font-size: 13px
-		font-weight: bold
+			padding: 18px 0
+			margin-right: 80px
 
-		padding: 18px 0
-		margin-right: 80px
+			&:last-of-type
+				margin: 0
 
-		&:last-of-type
-			margin: 0
+			&__cloud
+				display:inline-block
+				width: 24px
+				height: 15px
 
-		&__cloud
-			display:inline-block
-			width: 24px
-			height: 15px
+				background: url(/img/icon-cloud.png) center no-repeat
 
-			background: url(/img/icon-cloud.png) center no-repeat
-
-			margin-right: 12px
+				margin-right: 12px

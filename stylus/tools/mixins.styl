@@ -1,1 +1,18 @@
-	
+/*
+ * Size in grid
+ */
+grid-row()
+	width 960px
+	margin: 0 auto
+
+	clearfix()
+
+grid-col(n)
+	if n < 12
+		width: $grid-sizes[n]
+		float: left
+	else if n == 12
+		width: $grid-sizes[n]
+
+	else
+		background: red
