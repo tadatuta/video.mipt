@@ -7,10 +7,13 @@ grid-row()
 
 	clearfix()
 
-grid-col(n)
+grid-col(n, float=left, margin=$grid-col-margin)
 	if n < 12
 		width: $grid-sizes[n]
-		float: left
+		float: float
+		margin-left: margin
+		margin-right: margin
+
 	else if n == 12
 		width: $grid-sizes[n]
 

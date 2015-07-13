@@ -19,11 +19,11 @@ $font-main = "Helvetica Neue", Helvetica, Arial, sans-serif
  * Grid
  */
 
-_grid-col-width = 50px
-_grid-amound-of-cols = 12
-_grid-col-margin = 15px
+$grid-col-width = 50px
+$grid-amound-of-cols = 12
+$grid-col-margin = 15px
 
 $grid-sizes = {}
 
-for x in 1.._grid-amound-of-cols
-	$grid-sizes[x] = (_grid-col-width * x + 2 * _grid-col-margin * (x - 1))
+for x in 1..$grid-amound-of-cols
+	$grid-sizes[x] = ($grid-col-width * x + 2 * $grid-col-margin * (x - 1))
