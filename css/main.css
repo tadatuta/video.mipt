@@ -177,18 +177,25 @@ body {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
+  cursor: pointer;
+  margin-left: 80px;
   padding: 18px 0;
-  margin-right: 80px;
 }
-.menu__list__item:last-of-type {
+.menu__list__item:first-of-type {
   margin: 0;
 }
-.menu__list__item__cloud {
+.menu__list__item--cloud {
+  position: relative;
+  margin-left: 116px;
+}
+.menu__list__item--cloud:before {
   display: inline-block;
   width: 24px;
   height: 15px;
-  background: url("/img/icon-cloud.png") center no-repeat;
-  margin-right: 12px;
+  content: '';
+  position: absolute;
+  left: -36px;
+  background: url("/img/icon-cloud.png") no-repeat center;
 }
 .header {
   background-color: #fff;

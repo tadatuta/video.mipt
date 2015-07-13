@@ -20,18 +20,26 @@
 			font-size: 13px
 			font-weight: bold
 
-			padding: 18px 0
-			margin-right: 80px
+			cursor: pointer
 
-			&:last-of-type
+			margin-left: 80px
+			padding: 18px 0
+
+			&:first-of-type
 				margin: 0
 
-			&__cloud
-				display:inline-block
-				width: 24px
-				height: 15px
+			&--cloud
+				position: relative
+				margin-left: 116px
 
-				background: url(/img/icon-cloud.png) center no-repeat
+				&:before
+					display: inline-block
+					width: 24px
+					height: 15px
+					content: ''
+					absolute: left -36px
 
-				margin-right: 12px
+					background: url(/img/icon-cloud.png) no-repeat center
+
+
 
