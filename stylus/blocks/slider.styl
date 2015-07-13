@@ -1,5 +1,4 @@
 .slider
-	grid-col: 9
 
 	height: 340px
 
@@ -8,8 +7,6 @@
 
 
 	&__content
-		grid-col: 4 left 0
-
 		box-sizing: border-box
 		height: 100%
 
@@ -17,14 +14,9 @@
 
 		padding: 10px 18px
 
+	&_col_9
+		grid-col: 9
 
+		.slider__content
+			grid-col: 4 left 0
 
-		&__header
-			font-size: 24px
-
-			margin: 23px 2px
-
-		&__p
-
-			font-size: 13px
-			line-height: 20px
