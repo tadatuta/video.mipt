@@ -11,5 +11,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "homepage": "https://github.com/adinvadim/video.mipt",
+  "dependencies": {
+    "font-awesome": "~4.3.0",
+    "bootstrap": "~3.3.5",
+    "normalize.css": "~3.0.3"
+  }
 }
