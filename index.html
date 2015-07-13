@@ -3,43 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mipt video</title>
-	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower_components/reset-css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<header class="header">
-		<div class="header__row">
-			<div class="header__logo"></div>
+<body class="page">
+	<div class="page__wrapper page__wrapper_color_white">
+		<header class="header">
+			<div class="logo logo_col_3"></div>
 
-			<input type="text" placeholder="Поиск" class="header__search">
+			<input type="text" placeholder="Поиск" class="search search_col_6">
 
-			<div class="header__account">
-				<div class="header_accound__name">
+			<div class="account account_col_3">
+				<div class="account__name">
 					Вадим
 				</div>
-				<div class="header__account_surname">
+				<div class="account_surname">
 					Костин
 				</div>
 			</div>
-		</div>
-	</header>
-	<div class="menu">
-		<div class="menu__list">
-			<li class="menu__list__item">Главная</li>
-			<li class="menu__list__item">Библиотека</li>
-			<li class="menu__list__item">Коллекции</li>
-			<li class="menu__list__item">Подкасты</li>
-			<li class="menu__list__item menu__list__item--cloud">
+		</header>
+	</div>
+	<div class="page__wrapper page__wrapper_color_blue">
+		<div class="menu">
+			<li class="menu__item">Главная</li>
+			<li class="menu__item">Библиотека</li>
+			<li class="menu__item">Коллекции</li>
+			<li class="menu__item">Подкасты</li>
+			<li class="menu__item menu__item_cloud">
 				<!--<i class="menu__list__item__cloud"></i>-->
 				Загрузить свое видео на портал
 			</li>
 		</div>
 	</div>
 	<!--Class row only for debug-->
-	<div class="row" style="margin-top: 20px">
+	<div class="page__row">
 		<div class="slider">
 			<div class="slider__content">
-				<div class="slider__content__header">
+				<div class="title title_size_l">
 					Внимание, конкурс!
 				</div>
 				<div class="slider__content__p">
@@ -50,7 +50,7 @@
 		</div>
 		<div class="banner">
 			<div class="banner__content">
-				<div class="banner__content__header">
+				<div class="titile title_size_l">
 					Баннер
 				</div>
 				<div class="banner__content__p">
@@ -60,127 +60,153 @@
 			</div>
 		</div>
 	</div>
-	<div class="popular-video">
-		<div class="popular-video__header">Популярные видеоматериалы</div>
-		<div class="popular-video__item">
+	<div class="page__row">
+		<div class="title title_color_blue title_size_m title_col_12">
+			Популярные видеоматериалы
+		</div>
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="popular-video__item">
+		<div class="video-item video-item_col_3">
 
-			<div class="popular-video__item__preview"></div>
-			<div class="popular-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="popular-video__item__date">
-				21 января 2015
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="last-video">
-		<div class="last-video__header">Последние видеозаписи</div>
-		<div class="last-video__item">
-			<div class="last-video__item__preview"></div>
-			<div class="last-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="last-video__item__date">
-				21 января 2015
+	<div class="page__row">
+		<div class="title title_color_blue title_size_m title_col_12">
+			Последние видеозаписи
+		</div>
+		<div class="video-item video-item_col_4">
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="last-video__item">
-			<div class="last-video__item__preview"></div>
-			<div class="last-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="last-video__item__date">
-				21 января 2015
+		<div class="video-item video-item_col_4">
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
-		<div class="last-video__item">
-			<div class="last-video__item__preview"></div>
-			<div class="last-video__item__header">
-				Овчинкнин, оптика, подготовка
-				к ГОСу
-			</div>
-			<div class="last-video__item__date">
-				21 января 2015
+		<div class="video-item video-item_col_4">
+			<div class="video-item__preview"></div>
+			<div class="video-item__text">
+				<div class="title title_size_s title_color_black">
+					Овчинкнин, оптика, подготовка
+					к ГОСу
+				</div>
+				<div class="date">
+					21 января 2015
+				</div>
 			</div>
 		</div>
 	</div>
