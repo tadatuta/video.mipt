@@ -149,6 +149,10 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
+.page__wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .page__wrapper_color_blue {
   background: #0069b3;
   color: $color-normal;
@@ -156,19 +160,23 @@
 .page__wrapper_color_white {
   background: #fff;
 }
-.page__row {
+.page__wrapper_margin_none {
+  margin: 0;
+}
+.page__wrapper_margin_top {
+  margin-bottom: 0;
+}
+.page__wrapper__row {
   max-width: 960px;
   margin: 0 auto;
   zoom: 1;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
-.page__row:before,
-.page__row:after {
+.page__wrapper__row:before,
+.page__wrapper__row:after {
   content: "";
   display: table;
 }
-.page__row:after {
+.page__wrapper__row:after {
   clear: both;
 }
 .title {
@@ -210,18 +218,33 @@
   font-size: 12px;
 }
 .header {
-  max-width: 960px;
-  margin: 0 auto;
-  zoom: 1;
   padding: 10px 0 20px 0;
 }
-.header:before,
-.header:after {
-  content: "";
-  display: table;
+.footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 930px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 100px;
+  position: relative;
 }
-.header:after {
-  clear: both;
+.footer__copyright {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  margin: auto;
+}
+.footer__menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  margin: auto;
 }
 .search {
   background: url("/img/icon-search.png") no-repeat right;
@@ -274,6 +297,24 @@
 .video-item__text {
   padding: 0 20px;
 }
+.video-item_horizontal {
+  width: 450px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.video-item_horizontal .video-item__preview {
+  height: 91px;
+  width: 160px;
+  float: left;
+}
+.video-item_horizontal .video-item__text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 290px;
+}
 .video-item_col_3 {
   width: 210px;
   float: left;
@@ -295,19 +336,8 @@
   height: 163px;
 }
 .menu {
-  max-width: 960px;
-  margin: 0 auto;
-  zoom: 1;
   width: 930px;
   background-color: #0069b3;
-}
-.menu:before,
-.menu:after {
-  content: "";
-  display: table;
-}
-.menu:after {
-  clear: both;
 }
 .menu__item {
   -webkit-box-sizing: border-box;

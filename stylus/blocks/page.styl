@@ -6,6 +6,8 @@
 	font-size: 13px
 
 	&__wrapper
+		margin-top: 10px
+		margin-bottom: 10px
 
 		&_color_blue
 			background: $color-blue
@@ -15,8 +17,11 @@
 		&_color_white
 			background: white
 
-	&__row
-		grid-row()
+		&_margin_none
+			margin: 0
 
-		margin-top: 10px
-		margin-bottom: 10px
+		&_margin_top
+			margin-bottom: 0
+
+		&__row
+			grid-row()

@@ -23,11 +23,14 @@ $font-main = "Helvetica Neue", Helvetica, Arial, sans-serif
 $grid-col-width = 50px
 $grid-amound-of-cols = 12
 $grid-col-margin = 15px
+$grid-width = 960px
 
 $grid-sizes = {}
+$grid-sizes-procent = {}
 
 for x in 1..$grid-amound-of-cols
 	$grid-sizes[x] = ($grid-col-width * x + 2 * $grid-col-margin * (x - 1))
+	$grid-sizes-procent[x] = ($grid-sizes[x] / $grid-width) * 100%
 
 /*
  * Wrapper size

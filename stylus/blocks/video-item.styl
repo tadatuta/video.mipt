@@ -9,6 +9,19 @@
 	&__text
 		padding: 0 20px
 
+	&_horizontal
+		grid-col: 6
+
+		.video-item__preview
+			height: 91px
+			width: 160px//$grid-sizes[2] + 2 * $grid-col-margin
+			float: left
+
+		.video-item__text
+			box-sizing: border-box
+			float: left
+			width: 290px
+
 	&_col_3
 		grid-col: 3
 
@@ -24,3 +37,4 @@
 
 		.video-item__preview
 			height: 163px
+
