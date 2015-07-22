@@ -205,9 +205,9 @@
 }
 .title_col_12 {
   width: 930px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .paragraph {
   font-size: 13px;
@@ -225,9 +225,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 930px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
   height: 100px;
   position: relative;
 }
@@ -261,9 +261,9 @@
 }
 .search_col_6 {
   width: 450px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .account {
   font-size: 13px;
@@ -273,9 +273,9 @@
 }
 .account_col_3 {
   width: 210px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .logo {
   height: 52px;
@@ -283,9 +283,9 @@
 }
 .logo_col_3 {
   width: 210px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .video-item {
   background-color: #fff;
@@ -299,9 +299,9 @@
 }
 .video-item_horizontal {
   width: 450px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .video-item_horizontal .video-item__preview {
   height: 91px;
@@ -317,9 +317,9 @@
 }
 .video-item_col_3 {
   width: 210px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
   height: 210px;
 }
 .video-item_col_3 .video-item__preview {
@@ -327,9 +327,9 @@
 }
 .video-item_col_4 {
   width: 290px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
   height: 253px;
 }
 .video-item_col_4 .video-item__preview {
@@ -351,6 +351,7 @@
   font-size: 13px;
   font-weight: normal;
   cursor: pointer;
+  background-color: #0069b3;
   margin-left: 80px;
   padding: 18px 0;
 }
@@ -385,15 +386,15 @@
 }
 .slider_col_9 {
   width: 690px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
 }
 .slider_col_9 .slider__content {
   width: 290px;
-  float: left;
   margin-left: 0;
   margin-right: 0;
+  float: left;
 }
 .banner {
   height: 340px;
@@ -409,7 +410,13 @@
 }
 .banner_col_3 {
   width: 210px;
-  float: left;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
+}
+.link {
+  color: #0069b3;
+}
+.link_color_white {
+  color: #fff;
 }

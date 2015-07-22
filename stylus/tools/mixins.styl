@@ -7,12 +7,20 @@ grid-row()
 
 	clearfix()
 
-grid-col(n, float=left, margin=$grid-col-margin)
+grid-col(n, is-procent=false, float=left, margin=$grid-col-margin)
 	if n <= 12
-		width: $grid-sizes[n]
+		margin-procent = (margin / 960 * 100) %
+		if is-procent
+			width: $grid-sizes-procent[n]
+			margin-left: margin-procent
+			margin-right: margin-procent
+		else
+			width: grid-sizes[n]
+			margin-left: margin
+			margin-right: margin
+
+
 		float: float
-		margin-left: margin
-		margin-right: margin
 
 	else
 		background: red
