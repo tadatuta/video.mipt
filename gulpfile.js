@@ -1,14 +1,15 @@
-var gulp = require('gulp'),
-	stylus = require('gulp-stylus'),
-	livereload = require('gulp-livereload'),
-	nib = require('nib'),
-	connect = require('gulp-connect');
+var gulp = require('gulp');
+var stylus = require('gulp-stylus');
+var livereload = require('gulp-livereload');
+var nib = require('nib');
+var rupture = require('rupture');
+var connect = require('gulp-connect');
 
 gulp.task('stylus', function() {
 	gulp.src('./stylus/**/*.styl')
 		.pipe(stylus({
 			'include css': true,
-			use: [nib()]
+			use: [nib(), rupture()]
 		}))
 		.pipe(gulp.dest('./css'))
 		.pipe(connect.reload());

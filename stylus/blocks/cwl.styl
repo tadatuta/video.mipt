@@ -11,15 +11,18 @@
 
 
 		&:before
-			display: inline-block
-			width: 16px
-			height: 14px
-			content: ' '
-
-			background: rgba(white, 0.5)
-
+			make-icon()
 			margin-left: 15px
 			margin-right: 5px
 
+		&_comments
+			&:before
+				content: '\e800'
+		&_watches
+			&:before
+				content: '\e801'
+		&_likes
+			&:before
+				content: '\e802'
 
 

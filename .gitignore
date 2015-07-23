@@ -48,3 +48,6 @@ node_modules
 .bin/
 css/blocks
 css/tools
+css/fonts
+
+debug/
