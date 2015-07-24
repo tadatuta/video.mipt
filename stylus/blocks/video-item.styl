@@ -3,6 +3,7 @@
 
 	margin-bottom: 20px
 
+
 	&__preview
 		background: black
 
@@ -12,30 +13,52 @@
 	&_horizontal
 		col(1/2, cycle:2)
 
+
 		.video-item__preview
 			height: 91px
-			width: 160px//$grid-sizes[2] + 2 * $grid-col-margin
+			span(2/6)
 			float: left
+
+			+below(600px)
+				span(1)
+				float:none
+
 
 		.video-item__text
 			box-sizing: border-box
 			float: left
-			width: 290px
+			span(4/6)
 
+			+below(600px)
+				span(1)
+				float:none
 
 	&_col_3
 		col(3/12, cycle: 4)
-		//grid-col: 3
 
 		height:210px
 
+		+below(800px)
+			col(1/2, cycle: 2, uncycle: 4)
+
+		+below(480px)
+			col(1, cycle: 1)
+
 		.video-item__preview
 			height: 118px
+
+
 
 	&_col_4
 		col(4/12, cycle: 3)
 
 		height:253px
+
+		+below(600px)
+			col(1/2, cycle:2, uncycle: 3)
+
+		+below(480px)
+			col(1, cycle: 1)
 
 		.video-item__preview
 			height: 163px
