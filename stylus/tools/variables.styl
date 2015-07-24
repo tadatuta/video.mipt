@@ -30,4 +30,4 @@ for x in 1..$grid-amound-of-cols
 	size = $grid-col-width * x + 2 * $grid-col-margin * (x - 1)
 	grid-sizes[x] = size
 	//push(grid-sizes, size)
-	//push(grid-sizes-procent, ((size / $grid-width) * 100% ) %)
+	push($grid-sizes-procent, ((size / $grid-width) * 100% ) %)

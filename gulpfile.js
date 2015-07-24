@@ -4,12 +4,13 @@ var livereload = require('gulp-livereload');
 var nib = require('nib');
 var rupture = require('rupture');
 var connect = require('gulp-connect');
+var jeet = require('jeet')
 
 gulp.task('stylus', function() {
 	gulp.src('./stylus/**/*.styl')
 		.pipe(stylus({
 			'include css': true,
-			use: [nib(), rupture()]
+			use: [nib(), rupture(), jeet()]
 		}))
 		.pipe(gulp.dest('./css'))
 		.pipe(connect.reload());

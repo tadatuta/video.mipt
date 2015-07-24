@@ -11,7 +11,7 @@ grid-col(n, is-procent=false, float=left, margin=$grid-col-margin)
 	if n <= 12
 		margin-procent = (margin / 960 * 100) %
 		if is-procent
-			width: $grid-sizes-procent[n]
+			width: grid-sizes-procent[n]
 			margin-left: margin-procent
 			margin-right: margin-procent
 		else

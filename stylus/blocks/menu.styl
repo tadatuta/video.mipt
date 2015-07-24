@@ -19,6 +19,9 @@
 		margin-left: 60px
 		padding: 18px 10px
 
+		+below(960px)
+			margin-left: 40px
+
 		&:first-of-type
 			margin: 0
 
@@ -29,15 +32,29 @@
 			position: relative
 
 			&:before
-				display: inline-block
-				width: 24px
-				height: 15px
-				content: ''
+				make-icon()
+				color: #003961
+				content: '\e805'
 
-				background: url(/img/icon-cloud.png) no-repeat center
+				font-size: 13px
 
-				margin-bottom: -5px
-				margin-right: 21px
+				margin-right:20px
+
+				+below(960px)
+					display:none
+
+
+
+//&:before
+	//display: inline-block
+	//width: 24px
+	//height: 15px
+	//content: ''
+
+	//background: url(/img/icon-cloud.png) no-repeat center
+
+	//margin-bottom: -5px
+	//margin-right: 21px
 
 
 
