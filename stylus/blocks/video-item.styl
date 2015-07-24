@@ -10,7 +10,7 @@
 		padding: 0 20px
 
 	&_horizontal
-		grid-col: 6
+		col(1/2, cycle:2)
 
 		.video-item__preview
 			height: 91px
@@ -24,7 +24,8 @@
 
 
 	&_col_3
-		grid-col: 3
+		col(3/12, cycle: 4)
+		//grid-col: 3
 
 		height:210px
 
@@ -32,7 +33,7 @@
 			height: 118px
 
 	&_col_4
-		grid-col: 4
+		col(4/12, cycle: 3)
 
 		height:253px
 
