@@ -12,22 +12,33 @@
 		height: 100%
 
 		background-color: rgba(0,0,0,.8)
+		background-attachment: fixed
 
 		padding: 10px 18px
 
+	&__cwl
+		+below(535px)
+			display:none
 
 	&_col_9
 		col(9/12)
 
+		+below(800px)
+			col(2/3)
+
 		+below(600px)
 			col(1)
 
+			margin-bottom: 20px
 
 		.slider__content
 			span(4/9)
 
-			+below(800px)
-				span(1)
+			+between(600px, 800px)
+				span(2/3)
+
+			+below(480px)
+				display:none
 
 			//grid-col(4, margin: 0)
 
