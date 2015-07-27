@@ -16,14 +16,33 @@
 		cursor: pointer
 		background-color: $color-blue
 
-		margin-left: 60px
-		padding: 18px 10px
+		margin: 0 to-procent(30, 930)
+		padding: 18px to-procent(10,930)
 
-		+below(960px)
-			margin-left: 40px
+		+below(839px)
+			font-size:0.9rem
+			margin: 0 to-procent(20, 930)
+		+below(706px)
+			font-size:0.8rem
+
+		+below(600px)
+			display:block
+			float: none
+
+			text-align: center
+			font-size: 1rem
+
+			margin: 10px
+
+
 
 		&:first-of-type
-			margin: 0
+			+above(600px)
+				margin-left: 0
+
+		&:last-of-type
+			+above(600px)
+				margin-right: 0
 
 		&:hover
 			background: rgba(white, 0.2)
@@ -38,12 +57,13 @@
 
 				margin-right:20px
 
-				+below(840px)
+				+below(930px)
 					display:none
 
 
 
 //&:before
+
 	//display: inline-block
 	//width: 24px
 	//height: 15px
