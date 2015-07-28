@@ -18,21 +18,21 @@
 - rupture
 
 ### Запуск сайта
-*	Скачиваем репозиторий
+*	Скачиваем репозиторий, прописывая в косноле
 ```{r, engine='bash'}
-~ git clone https://github.com/adinvadim/video.mipt
+git clone https://github.com/adinvadim/video.mipt
 ```
 *	Подтягиваем bower-components
 ```{r, engine='bash'}
-	~ bower update
+bower update
 ```
 *	Подтягиваем npm_modules
 ```{r, engine='bash'}
-	~ sudo npm update
+sudo npm update
 ```
 *	Запускаем систему сборки
 ```{r, engine='bash'}
-	~ gulp
+gulp
 ```
 *	Открываем браузер
-	> [This link](http://localhost:8888/)
+> [This link](http://localhost:8888/)
