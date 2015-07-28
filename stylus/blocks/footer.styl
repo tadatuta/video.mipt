@@ -1,17 +1,29 @@
 .footer
 	col(1)
+
 	box-sizing: border-box
-	height: 100px
 	position: relative
+	height: 100px
+
 
 	&__copyright
-		absolute: top left bottom
-		height: 50%
+		align(v)
+		width: cw(2/3)
+		absolute: left
 
-		margin: auto
+		+below(600px)
+			center(600px)
+			position: static
+			height: auto
 
 	&__menu
-		absolute: bottom right
-		height: 50%
+		align(v)
+		absolute:  right
+		//height: 50%
 
-		margin: auto
+		//margin: auto
+
+		+below(600px)
+			center(600px)
+			position: static
+			height: auto
