@@ -13,12 +13,8 @@
     "tests"
   ],
   "homepage": "https://github.com/adinvadim/video.mipt",
-  "dependencies": {
-    "font-awesome": "~4.3.0",
-    "bootstrap": "~3.3.5",
-    "normalize.css": "~3.0.3"
-  },
   "devDependencies": {
-    "reset-css": "~2.0.2011012602"
+    "reset-css": "~2.0.2011012602",
+    "normalize.css": "~3.0.3"
   }
 }

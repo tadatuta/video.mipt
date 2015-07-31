@@ -317,24 +317,7 @@
   margin-top: 10px;
 }
 .account_col_3 {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 22.75%;
-  margin-left: 0%;
-  margin-right: 3%;
-}
-.account_col_3:before,
-.account_col_3:after {
-  content: '';
-  display: table;
-}
-.account_col_3:after {
-  clear: both;
-}
-.account_col_3:last-child {
-  margin-right: 0%;
+  float: right;
 }
 @media only screen and (max-width: 715px) {
   .account_col_3 {
@@ -725,6 +708,8 @@
   padding-left: 0;
   padding-right: 0;
   background-color: #0069b3;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .menu:before,
 .menu:after {
