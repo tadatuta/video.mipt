@@ -1,0 +1,37 @@
+.slider
+
+	height: 340px
+
+	background: url(/img/photo1.jpg) no-repeat
+	background-size: cover
+	color: $color-main
+
+
+
+	&__cwl
+		+below(535px)
+			display:none
+
+	&_col_9
+		col(9/12)
+
+		+below(800px)
+			col(2/3)
+
+		+below(600px)
+			col(1)
+
+			background-position: center
+			margin-bottom: 20px
+
+		.slider__content
+			span(4/9)
+
+			+between(600px, 800px)
+				span(2/3)
+
+			+below(480px)
+				display:none
+
+
+

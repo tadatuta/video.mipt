@@ -8,6 +8,7 @@ block('menu')(
 				content = [
 					{
 						block: 'icon',
+						mix: { block: 'menu', elem: 'icon'},
 						mods: { cloud: true }
 					},
 					item['name']

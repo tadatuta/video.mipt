@@ -3,7 +3,8 @@
 		{
 			elems: [
 				'item',
-				'link'
+				'link',
+				'icon'
 			]
 		},
 		{
