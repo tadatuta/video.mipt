@@ -9,7 +9,7 @@ block('menu')(
 					{
 						block: 'icon',
 						mix: { block: 'menu', elem: 'icon'},
-						mods: { cloud: true }
+						mods: { type: 'cloud'}
 					},
 					item['name']
 				];
@@ -33,4 +33,3 @@ block('menu')(
 	})
 
 );
-

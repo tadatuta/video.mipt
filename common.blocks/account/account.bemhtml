@@ -1,7 +1,19 @@
-block account, content: {
-	var oldContent = applyNext();
-	return [
-		{ elem: 'name', content: oldContent.split(' ')[0]},
-		{ elem: 'surname', content: oldContent.split(' ')[1]}
-	]
-}
+block('account')(
+	content()(function(){
+		return "Name Surname"
+	}),
+	match(function() { return this.ctx.name && this.ctx.surname;})(
+		content()(function(){
+			return [
+				{ elem: 'name', content: this.ctx.name },
+				{ elem: 'surname', content: this.ctx.surname}
+			]
+		})
+	),
+	content()(function(){
+		return [
+			applyNext(),
+			{ block: 'icon', mods: { type: 'caret' }}
+		]
+	})
+)
