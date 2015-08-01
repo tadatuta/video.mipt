@@ -1,3 +1,6 @@
+@import 'jeet'
+@import 'rupture'
+
 // Colors
 // -------------------
 
@@ -18,16 +21,24 @@ $font-icon = 'icons-mipt-video'
 // Grid
 // -------------------
 
-$grid-col-width = 50px
+$grid-gutter = 3%
 $grid-amound-of-cols = 12
 $grid-col-margin = 15px
-$grid-width = 960px
+$grid-width = 930px
 
-grid-sizes = ()
-grid-sizes-procent = ()
+// Jeet
+// -------------------
 
-for x in 1..$grid-amound-of-cols
-	size = $grid-col-width * x + 2 * $grid-col-margin * (x - 1)
-	grid-sizes[x] = size
-	//push(grid-sizes, size)
-	push($grid-sizes-procent, ((size / $grid-width) * 100% ) %)
+jeet = {
+  gutter: 3,
+  parent-first: false,
+  layout-direction: LTR,
+  max-width: 930px
+}
+
+
+// Rupture
+// -------------------
+
+rupture.scale = 0 400px 600px 800px
+rupture.scale-names = 'xs' 's' 'm'

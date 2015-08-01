@@ -1,24 +1,14 @@
 {
+  "author": "Vadim Kostin",
   "name": "video.mipt",
+  "email": "adin.vadim@gmail.com",
   "version": "0.0.0",
-  "authors": [
-    "core.safecrlf <adin.vadim@gmail.com>"
-  ],
-  "license": "MIT",
   "ignore": [
-    "**/.*",
+    ".enb/tmp",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "libs"
   ],
-  "homepage": "https://github.com/adinvadim/video.mipt",
   "dependencies": {
-    "font-awesome": "~4.3.0",
-    "bootstrap": "~3.3.5",
-    "normalize.css": "~3.0.3"
-  },
-  "devDependencies": {
-    "reset-css": "~2.0.2011012602"
+    "bem-core": "v2.6.0"
   }
 }

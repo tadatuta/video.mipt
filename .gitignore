@@ -14,6 +14,7 @@ bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+libs
 
 
 ### Node ###
@@ -51,3 +52,8 @@ css/tools
 css/fonts
 
 debug/
+
+.enb/tmp/
+
+desktop.bundles/
+!desktop.bundles/index/index.bemjson.js

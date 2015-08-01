@@ -1,0 +1,58 @@
+.menu__item
+		box-sizing: border-box
+		display: inline-block
+		list-style: none
+		position: relative
+		float: left
+
+		text-transform: uppercase
+		font-size: 13px
+		font-weight: normal
+
+		cursor: pointer
+		background-color: $color-blue
+
+		margin: 0 to-procent(30, 930)
+		padding: 18px to-procent(10,930)
+
+		+below(839px)
+			font-size:(0.9 * 13)px
+			margin: 0 to-procent(20, 930)
+
+		+below(706px)
+			font-size:(0.8 * 13)px
+
+		+below(600px)
+			display:block
+			float: none
+
+			text-align: center
+			font-size: 13px
+
+			margin: 10px
+
+
+
+		&:first-of-type
+			+above(600px)
+				margin-left: 0
+
+		&:last-of-type
+			+above(600px)
+				margin-right: 0
+
+		&:hover
+			background: rgba(white, 0.2)
+
+		&_cloud
+			position: relative
+
+			&:before
+				make-icon()
+				color: #003961
+				content: '\e805'
+
+				margin-right:20px
+
+				+below(930px)
+					display:none

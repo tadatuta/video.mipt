@@ -1,0 +1,9 @@
+{
+	"freeze_path" : {
+		"*.blocks/**.eot": ":encodeURIComponent:",
+		"*.blocks/**.svg": ":encodeURIComponent:",
+		"*.blocks/**.ttf": ":encodeURIComponent:",
+		"*.blocks/**.woff": ":encodeURIComponent:",
+		"*.blocks/**.": ":base64:"
+	}
+}

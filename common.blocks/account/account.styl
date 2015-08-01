@@ -1,0 +1,28 @@
+.account
+	font-size: 13px
+	text-align: right
+	color: $color-blue
+	position: relative
+
+	margin-top: 10px
+
+	&_col_3
+		col(3/12)
+
+		+below(715px)
+			width: cw(1)
+			margin-top: 30px
+
+			text-align: center
+
+	&__name
+		display: inline-block
+
+	&__surname
+		display: inline-block
+
+	&:after
+
+		make-icon()
+
+		content: '\e806'
