@@ -1,8 +1,5 @@
 ({
-	block: 'title',
-	mod: 'level',
-	tech: 'bemhtml',
-	mustDeps: [
+	shouldDeps: [
 		{
 			mods: {
 				level: ['1','2','3']

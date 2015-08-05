@@ -1,0 +1,40 @@
+block('video-box')(
+	content()(function(){
+		var icon;
+		var title;
+		var items;
+		if (this.ctx.icon) {
+			icon = {
+				block: 'icon',
+				mods: { type: this.ctx.icon}
+			};
+		}
+		if (this.ctx.title) {
+			title = {
+				block: 'title',
+				mods: { level: 2, color: 'blue' },
+				content: [
+					icon,
+					this.ctx.title
+				]
+			}
+		}
+		return [
+			{
+				block: 'page',
+				elem: 'row',
+				content: [
+					title
+				]
+			},
+			{
+				block: 'page',
+				elem: 'row',
+				content: [
+					applyNext()
+				]
+			}
+		];
+	})
+
+);

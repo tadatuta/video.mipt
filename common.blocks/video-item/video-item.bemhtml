@@ -1,0 +1,25 @@
+block('video-item')(
+	content()(function(){
+		return [
+			{
+				elem: 'preview'
+			},
+			{
+				elem: 'text',
+				content: [
+
+					{
+						block: 'title',
+						mods: { level: 3, color: 'black' },
+						content: this.ctx.title,
+					},
+					{
+						block: 'date',
+						content: this.ctx.date
+					}
+				]
+			}
+		]
+	})
+
+)
