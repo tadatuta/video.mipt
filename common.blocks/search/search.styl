@@ -12,6 +12,9 @@
 	padding: 12px 0
 	margin-top: 10px
 
+	&:focus
+		opacity: 1
+
 	&_col_6
 		col(6/12)
 		margin-left: cw(3/12)
@@ -22,3 +25,6 @@
 
 			margin-left: cw(3/12)
 			margin-left: calc(3%+162px)
+
+		+below(600px)
+			col(1)

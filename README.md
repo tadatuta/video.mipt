@@ -13,7 +13,7 @@
 <a name="levels"></a>
 ## Уровни переопределения
 
-* 'common.blocks' - основные блоки
+* `common.blocks` - основные блоки
 
 <a name="blocks"></a>
 ## Блоки
@@ -38,7 +38,7 @@
 <a name="supported-browsers"></a>
 ## Поддерживаемые браузеры
 
-** Comming Soon **
+Comming Soon
 
 <a href="tech"></a>
 ## Технологии
@@ -51,12 +51,12 @@
 <a href="tools"></a>
 ## Инструменты
 
-** Сборщики **
+### Сборщики
 
 * [ENB](http://enb-make.info/)
 * [borschik](https://ru.bem.info/tools/optimizers/borschik/)
 
-**Оптимизаторы**
+### Оптимизаторы
 
 * ...
 
@@ -65,28 +65,33 @@
 
 Скачивания репозитория:
 
-'''bash
+```bash
 git clone https://github.com/adinvadim/video.mipt.git
 cd video.mipt
-'''
+```
 
 Установка зависимостей:
 
-'''bash
+```bash
 npm install
-'''
+```
 
 Установка зависимых библиотек
 
-'''bash
+```bash
 bower install
-'''
+```
 
 Запуск сервера для разработки
 
-'''bash
+```bash
 enb server
 open http://localhost:8080/
-'''
+```
 
-В частности, в данный момент верстка главной странице находится по [адресу](http://localhost:8080/desktop.bundles/index/index.html)
+Или, если не уставновлен enb глобально
+
+```bash
+./node_modules/enb/bin/enb server
+open http://localhost:8080/
+```
