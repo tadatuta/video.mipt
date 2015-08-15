@@ -1,13 +1,19 @@
 block('slider')(
-	match(function(){ return this.ctx.header && this.ctx.text; })(
-		content()(function(){
+	js()(true),
+	elem('item')(
+		js()(function() {
+			return {
+				url: this.ctx.url
+			}
+		}),
+		content()(function() {
 			return {
 				elem: 'content',
 				content: [
 					{
 						block: 'title',
-						mods: { level: '1'},
-						mix: { block: 'slider', elem: 'title'},
+						mods: { level: '1' },
+						mix: { block: 'slider', elem: 'title' },
 						content: this.ctx.header
 					},
 					{
@@ -19,4 +25,5 @@ block('slider')(
 			}
 		})
 	)
-)
+);
+

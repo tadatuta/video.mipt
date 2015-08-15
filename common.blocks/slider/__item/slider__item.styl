@@ -1,0 +1,25 @@
+@import nib
+.slider__item
+	display: none
+	height: 100%
+	width: 100%
+	float: left
+
+	background-color: white
+	background-repeat: no-repeat
+	background-size: cover
+	color: $color-main
+
+	transition: 0.6s ease-in-out left
+
+	&_active
+		display: block
+		left: 0
+
+	&_type_next
+		display: block
+		absolute: left 100% top 0
+
+	&_type_prev
+		display: block
+		absolute: left -100% top 0

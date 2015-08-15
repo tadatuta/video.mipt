@@ -3,7 +3,8 @@
 		{
 			elems: [
 				'content',
-				'title'
+				'title',
+				'item'
 			]
 		},
 		{
@@ -13,6 +14,12 @@
 		{
 			block: 'text',
 			tech: 'bemhtml'
+		}
+	],
+	mustDeps: [
+		{
+			block: 'jquery',
+			tech: 'js'
 		}
 	]
 
