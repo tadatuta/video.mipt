@@ -11,5 +11,8 @@
   "dependencies": {
     "bem-core": "v2.6.0",
     "bl-carousel": "https://github.com/tadatuta/bl-carousel.git"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
   }
 }
