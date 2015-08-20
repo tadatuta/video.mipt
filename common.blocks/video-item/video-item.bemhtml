@@ -1,8 +1,12 @@
 block('video-item')(
+	js()(true),
+
 	content()(function(){
 		return [
 			{
-				elem: 'preview'
+				elem: 'preview',
+				js: { imgUrl: this.ctx.imgUrl },
+				content: { elem: 'wrapper' }
 			},
 			{
 				elem: 'text',

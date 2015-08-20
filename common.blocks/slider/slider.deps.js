@@ -4,7 +4,8 @@
 			elems: [
 				'content',
 				'title',
-				'item'
+				'item',
+				'controls'
 			]
 		},
 		{
@@ -15,12 +16,5 @@
 			block: 'text',
 			tech: 'bemhtml'
 		}
-	],
-	mustDeps: [
-		{
-			block: 'jquery',
-			tech: 'js'
-		}
 	]
-
 })
