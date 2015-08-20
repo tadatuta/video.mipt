@@ -75,8 +75,7 @@ cd video.mipt
 ```bash
 npm install
 ```
-
-Установка зависимых библиотек
+Установка зависимых библиотек:
 
 ```bash
 bower install
@@ -93,5 +92,5 @@ open http://localhost:8080/
 
 ```bash
 ./node_modules/enb/bin/enb server
-open http://localhost:8080/
+open http://localhost:8080/desktop.bundles/index/index.html
 ```
