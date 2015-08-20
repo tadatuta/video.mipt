@@ -1,0 +1,29 @@
+block('video-item')(
+	js()(true),
+
+	content()(function(){
+		return [
+			{
+				elem: 'preview',
+				js: { imgUrl: this.ctx.imgUrl },
+				content: { elem: 'wrapper' }
+			},
+			{
+				elem: 'text',
+				content: [
+
+					{
+						block: 'title',
+						mods: { level: 3, color: 'black' },
+						content: this.ctx.title,
+					},
+					{
+						block: 'date',
+						content: this.ctx.date
+					}
+				]
+			}
+		]
+	})
+
+)

@@ -1,0 +1,46 @@
+block('slider')(
+	js()(true),
+	elem('item')(
+		js()(function() {
+			return {
+				url: this.ctx.url
+			}
+		}),
+		content()(function() {
+			return {
+				elem: 'content',
+				content: [
+					{
+						block: 'title',
+						mods: { level: '1' },
+						mix: { block: 'slider', elem: 'title' },
+						content: this.ctx.header
+					},
+					{
+						tag: 'p',
+						block: 'text',
+						content: this.ctx.text
+					}
+				]
+			}
+		})
+	),
+	content()(function() {
+		var list = [];
+		var item;
+		for ( var i = 0; i < this.ctx.content.length; i++ ) {
+			item = {
+				elem: 'control',
+			}
+			list[i] = item;
+		}
+		return [
+			applyNext(),
+			{
+				elem: 'controls',
+				content: list
+			}
+		];
+	})
+);
+

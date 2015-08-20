@@ -1,0 +1,9 @@
+{
+	"path" : {
+		"/" : "./"
+	},
+	"freeze_path" : {
+		"*.blocks/icon/fonts/": "fonts/",
+		"*.blocks/**/*.woff": ":base64:"
+	}
+}

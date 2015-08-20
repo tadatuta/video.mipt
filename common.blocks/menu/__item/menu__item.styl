@@ -1,0 +1,35 @@
+.menu__item
+	box-sizing: border-box
+	display: inline-block
+	list-style: none
+	position: relative
+
+	text-transform: uppercase
+	font-size: 13px
+	font-weight: normal
+
+	cursor: pointer
+	background-color: $color-blue
+
+	margin: 0
+	padding: 18px to-procent(40,930)
+
+	+below(839px)
+		font-size:(0.9 * 13)px
+		padding: 18px to-procent(20,930)
+
+	+below(706px)
+		font-size:(0.8 * 13)px
+
+	+below(600px)
+		display:block
+		float: none
+
+		text-align: center
+		font-size: 13px
+
+		margin: 0 10px
+
+	&:hover
+		background: rgba(white, 0.2)
+

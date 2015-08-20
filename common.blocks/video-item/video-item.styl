@@ -1,0 +1,77 @@
+.video-item
+	background: white
+
+	margin-bottom: 20px
+
+
+	&__wrapper
+		display: none
+		height: 100%
+		width: 100%
+
+		background-color: rgba(black, 0.4)
+
+	&__preview
+		background: black no-repeat center center
+
+	&__text
+		padding: 0 20px
+
+	&_horizontal
+		col(1/2, cycle:2)
+
+		+below(480px)
+			col(1, cycle: 1)
+
+		.video-item__preview
+			height: 91px
+			float: left
+
+			span(2/6)
+
+			+below(600px)
+				span(1)
+				float:none
+
+
+		.video-item__text
+			box-sizing: border-box
+			float: left
+
+			span(4/6)
+
+			+below(600px)
+				span(1)
+				float:none
+
+	&_col_3
+		col(3/12, cycle: 4)
+
+		height:210px
+
+		+below(800px)
+			col(1/2, cycle: 2, uncycle: 4)
+
+		+below(480px)
+			col(1, cycle: 1)
+
+		.video-item__preview
+			height: 118px
+
+
+
+	&_col_4
+		col(4/12, cycle: 3)
+
+		height:253px
+
+		+below(600px)
+			col(1/2, cycle:2, uncycle: 3)
+
+		+below(480px)
+			col(1, cycle: 1)
+
+
+		.video-item__preview
+			height: 163px
+

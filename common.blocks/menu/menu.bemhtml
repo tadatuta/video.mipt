@@ -1,0 +1,35 @@
+block('menu')(
+
+	content()(function() {
+		var oldContent = applyNext();
+		var menuItems = oldContent.map(function(item) {
+			var content;
+			if (item['mods']) {
+				content = [
+					{
+						block: 'icon',
+						mix: { block: 'menu', elem: 'icon'},
+						mods: { type: 'cloud'}
+					},
+					item['name']
+				];
+			} else {
+				content = item['name'];
+			}
+			return {
+				elem: 'item',
+				tag: 'li',
+				content: [
+					{
+						block: 'link',
+						tag: 'a',
+						mix: { block: 'menu', elem: 'link', mods: item['mods']},
+						content: content
+					}
+				]
+			}
+		})
+		return menuItems;
+	})
+
+);
