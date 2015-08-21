@@ -75,17 +75,12 @@ cd video.mipt
 ```bash
 npm install
 ```
-Установка зависимых библиотек:
-
-```bash
-bower install
-```
 
 Запуск сервера для разработки
 
 ```bash
 enb server
-open http://localhost:8080/
+open http://localhost:8080/desktop.bundles/index/index.html
 ```
 
 Или, если не уставновлен enb глобально
