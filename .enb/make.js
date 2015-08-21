@@ -7,7 +7,7 @@ var techs = {
         borschik: require('enb-borschik/techs/borschik'),
 
         // css
-        stylus: require('enb-stylus/techs/css-stylus-with-nib-rupture-jeet.js'),
+        stylus: require('enb-stylus/techs/stylus.js'),
 
         // js
         browserJs: require('enb-diverse-js/techs/browser-js'),
@@ -49,7 +49,11 @@ module.exports = function(config) {
                 target: '?.css',
                 autoprefixer: {
                     browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
-                }
+                },
+				useNib: true,
+				useRupture: true,
+				useJeet: true
+
             }],
 
             // bemtree
