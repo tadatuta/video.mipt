@@ -33,6 +33,10 @@
 * text
 * link
 * date
+* footer
+* video-box
+* video-item
+* jquery
 
 
 <a name="supported-browsers"></a>
