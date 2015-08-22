@@ -1,0 +1,13 @@
+block('page').elem('wrapper')(
+	content()(function(){
+		var isRow = this.ctx.row;
+		if (isRow != false) {
+			return {
+				elem: 'row',
+				content: applyNext()
+			}
+		} else {
+			return applyNext();
+		}
+	})
+)

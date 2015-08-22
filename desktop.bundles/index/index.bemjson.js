@@ -16,7 +16,6 @@
 				{
 					block: 'header',
 					tag: 'header',
-					mix: { block: 'page', elem: 'row'},
 					content: [
 						{
 							block: 'logo',
@@ -31,159 +30,247 @@
 		},
 		{
 			elem: 'wrapper',
+			row: false,
 			mods: { margin: 'none', color: 'blue'},
 			content: [
 				{
 					block: 'menu',
 					tag: 'menu',
-					//mix: { block: 'page', elem: 'row', elemMods: { padding: 'none' }},
+					mods: { theme: 'main' },
 					content: [
-						{name: 'Главная'},
-						{name: 'Библиотека'},
-						{name: 'Коллекции'},
-						{name: 'Подкасты'},
-						{name: 'Загрузить свое видео на портал', mods: {cloud: true}}
+						{ name: 'Главная' },
+						{ name: 'Библиотека' },
+						{ name: 'Коллекции' },
+						{ name: 'Подкасты' },
+						{ name: 'Загрузить свое видео на портал', mods: {cloud: true} }
 					]
 				}
 			]
 		},
 		{
 			elem: 'wrapper',
-			content: {
-				block: 'page',
-				elem: 'row',
-				content: [
-					{
-						block: 'slider',
-						mods: { col: '9' },
-						content: [
-							{
-								elem: 'item',
-								header: 'Внимание конкурс!',
-								text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.',
-								url: '/img/photo1.jpg'
-							},
-							{
-								elem: 'item',
-								header: 'Второй слайд!',
-								text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
-								url: 'http://mipt.ru/upload/medialibrary/63a/moscow_workshop.jpg'
-
-							},
-							{
-								elem: 'item',
-								header: 'Третий слайд!',
-								text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
-								url: 'http://cdn3.img22.ria.ru/images/92905/70/929057089.jpg'
-
-							}
-						]
-
-					},
-					{
-						block: 'banner',
-						mods: { col: '3' },
-						header: 'МФТИ ВИДЕО',
-						text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.'
-
-					}
-				]
-			}
-		},
-		{
-			block: 'video-box',
-			mix: { block: 'page', elem: 'wrapper'},
-			title: 'Популярные видеоматериалы',
-			icon: 'star',
 			content: [
 				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Овчинкнин, оптика, подготовка к ГОСу',
-					date: '21 января 2015',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Реклама жизни в МФТИ',
-					date: '25 января 2015',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Магнус Карлсен в МФТИ',
-					date: '14 июля 2014',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Овчинкнин, оптика, подготовка к ГОСу',
-					date: '7 декабря 2014',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Овчинкнин, оптика, подготовка к ГОСу',
+					block: 'slider',
+					mods: { col: '9' },
+					content: [
+						{
+							elem: 'item',
+							header: 'Внимание конкурс!',
+							text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.',
+							url: '/img/photo1.jpg'
+						},
+						{
+							elem: 'item',
+							header: 'Второй слайд!',
+							text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
+							url: 'http://mipt.ru/upload/medialibrary/63a/moscow_workshop.jpg'
 
-					date: '21 января 2015',
-					imgUrl: '/img/video-item.jpg'
+						},
+						{
+							elem: 'item',
+							header: 'Третий слайд!',
+							text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
+							url: 'http://cdn3.img22.ria.ru/images/92905/70/929057089.jpg'
+
+						}
+					]
+
 				},
 				{
-					block: 'video-item',
+					block: 'banner',
 					mods: { col: '3' },
-					title: 'Реклама жизни в МФТИ',
-					date: '25 января 2015',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Магнус Карлсен в МФТИ',
-					date: '14 июля 2014',
-					imgUrl: '/img/video-item.jpg'
-				},
-				{
-					block: 'video-item',
-					mods: { col: '3' },
-					title: 'Овчинкнин, оптика, подготовка к ГОСу',
-					date: '7 декабря 2014',
-					imgUrl: '/img/video-item.jpg'
+					header: 'Баннер',
+					text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.'
+
 				}
 			]
 		},
 		{
-			block: 'video-box',
-			mix: { block: 'page', elem: 'wrapper' },
-			title: 'Последние видеозаписи',
-			icon: 'clock',
+			elem: 'wrapper',
 			content: [
 				{
-					block: 'video-item',
-					mods: { col: '4' },
-					title: 'Овчинкнин, оптика, подготовка к ГОСу',
-					date: '21 января 2015',
-					imgUrl: '/img/video-item.jpg'
+					block: 'video-box',
+					title: 'Популярные видеоматериалы',
+					icon: 'star',
+					content: [
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '21 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Реклама жизни в МФТИ',
+							date: '25 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Магнус Карлсен в МФТИ',
+							date: '14 июля 2014',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '7 декабря 2014',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+
+							date: '21 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Реклама жизни в МФТИ',
+							date: '25 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Магнус Карлсен в МФТИ',
+							date: '14 июля 2014',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '3' },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '7 декабря 2014',
+							imgUrl: '/img/video-item.jpg'
+						}
+					]
+				}
+			]
+		},
+		{
+			elem: 'wrapper',
+			content: [
+				{
+					block: 'video-box',
+					title: 'Последние материалы',
+					icon: 'clock',
+					content: [
+						{
+							block: 'video-item',
+							mods: { col: '4' },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '21 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '4' },
+							title: 'Реклама жизни в МФТИ',
+							date: '25 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { col: '4' },
+							title: 'Магнус Карлсен в МФТИ',
+							date: '14 июля 2014',
+							imgUrl: '/img/video-item.jpg'
+						}
+					]
+				}
+			]
+		},
+		{
+			elem: 'wrapper',
+			mods: { color: 'white' },
+			content: [
+				{
+					block: 'video-box',
+					title: 'Последние материалы',
+					mods: { col: 2 },
+					content: [
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '21 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Реклама жизни в МФТИ',
+							date: '25 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Магнус Карлсен в МФТИ',
+							date: '14 июля 2014',
+							imgUrl: '/img/video-item.jpg'
+						}
+					]
 				},
 				{
-					block: 'video-item',
-					mods: { col: '4' },
-					title: 'Реклама жизни в МФТИ',
-					date: '25 января 2015',
-					imgUrl: '/img/video-item.jpg'
-				},
+					block: 'video-box',
+					title: 'Подкасты',
+					mods: { col: 2 },
+					link: {
+						url: '#',
+						name: 'Все подкасты'
+					},
+					content: [
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Овчинкнин, оптика, подготовка к ГОСу',
+							date: '21 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Реклама жизни в МФТИ',
+							date: '25 января 2015',
+							imgUrl: '/img/video-item.jpg'
+						},
+						{
+							block: 'video-item',
+							mods: { horizontal: true },
+							title: 'Магнус Карлсен в МФТИ',
+							date: '14 июля 2014',
+							imgUrl: '/img/video-item.jpg'
+						}
+					]
+				}
+			]
+		},
+		{
+			elem: 'wrapper',
+			mods: { color: 'blue', margin: 'none' },
+			content: [
 				{
-					block: 'video-item',
-					mods: { col: '4' },
-					title: 'Магнус Карлсен в МФТИ',
-					date: '14 июля 2014',
-					imgUrl: '/img/video-item.jpg'
+					block: 'footer',
+					content: [
+						{
+							elem: 'copyright',
+							content: '© 2015 Московский физико-технический институт лаборатория инновационных образовательных технологий МФТИ'
+						},
+						{
+							elem: 'menu'
+						}
+					]
 				}
 			]
 		}
-
     ]
 });

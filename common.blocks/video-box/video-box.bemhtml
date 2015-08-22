@@ -1,8 +1,15 @@
 block('video-box')(
 	content()(function(){
+		var wrap = function(item) {
+			return {
+				elem: 'row',
+				content: item
+			}
+		}
 		var icon;
 		var title;
 		var items;
+		var link;
 		if (this.ctx.icon) {
 			icon = {
 				block: 'icon',
@@ -12,6 +19,7 @@ block('video-box')(
 		if (this.ctx.title) {
 			title = {
 				block: 'title',
+				mix: { block: 'video-box', elem: 'title' },
 				mods: { level: 2, color: 'blue' },
 				content: [
 					icon,
@@ -19,21 +27,17 @@ block('video-box')(
 				]
 			}
 		}
-		return [
-			{
-				block: 'page',
-				elem: 'row',
-				content: [
-					title
-				]
-			},
-			{
-				block: 'page',
-				elem: 'row',
-				content: [
-					applyNext()
-				]
+		if (this.ctx.link) {
+			link = {
+				block: 'link',
+				mix: { block: 'video-box', elem: 'link'},
+				content: this.ctx.link.name
 			}
+		}
+		return [
+			wrap(title),
+			wrap(applyNext()),
+			wrap(link)
 		];
 	})
 

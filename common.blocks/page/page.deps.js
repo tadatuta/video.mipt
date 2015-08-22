@@ -8,5 +8,13 @@
 			block: 'global',
 			elem: 'mixins'
 		}
+	],
+	shouldDeps: [
+		{
+			elems: [
+				'wrapper',
+				'row'
+			]
+		}
 	]
 })

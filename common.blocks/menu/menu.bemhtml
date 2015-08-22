@@ -22,7 +22,7 @@ block('menu')(
 				content: [
 					{
 						block: 'link',
-						tag: 'a',
+						mods: { color: 'white' },
 						mix: { block: 'menu', elem: 'link', mods: item['mods']},
 						content: content
 					}

@@ -1,0 +1,27 @@
+.footer
+	//col(1)
+
+	box-sizing: border-box
+	position: relative
+	height: 100px
+
+	clearfix()
+
+	&__copyright
+		align(v)
+		width: cw(2/3)
+		absolute: left
+		font-size: 13px
+
+		+below(600px)
+			center(600px)
+			height: auto
+
+	&__menu
+		align(v)
+		absolute:  right
+
+		+below(600px)
+			center(600px)
+			position: static
+			height: auto

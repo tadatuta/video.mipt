@@ -10,6 +10,10 @@
 		{
 			block: 'icon',
 			tech: 'bemhtml'
+		},
+		{
+			block: 'link',
+			tech: 'bemhtml'
 		}
 	]
 })
