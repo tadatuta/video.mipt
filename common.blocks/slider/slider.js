@@ -12,20 +12,17 @@ provide(BEMDOM.decl(this.name,
 
 				this.setMod($(this.elem('item')[0]), 'active');
 
-				var i;
-				for (i = 0; i < items.length; i++) {
+				for (var i = 0; i < items.length; i++) {
 					items[i].style.backgroundImage = "url(" + this.elemParams($(items[i])).url + ")";
 				}
-				var controlsWeight = 0,
-				    controlsHeight = 0;
-				for (i = 0; i < controls.length; i++) {
-					console.log(controls[i].style.width);
-				}
 
-				this.bindTo(this.elem('control'), 'click', function(e) {
+				this.bindTo('control', 'click', function(e) {
 					var newIndex = $(e.target).index();
-					this.newActiveItem(newIndex);
+					this._newActiveItem(newIndex);
 				})
+
+				this.bindTo('mouseenter', this.pause)
+				    .bindTo('mouseleave', this.cycle);
 
 			},
 		}
@@ -47,6 +44,18 @@ provide(BEMDOM.decl(this.name,
 		}
 	},
 
+	cycle: function(e) {
+		this.interval = setInterval($.proxy(this.next, this), 4000);
+
+		return this;
+	},
+
+	pause: function(e) {
+		clearInterval(this.interval);
+		this.interval = null;
+		return this;
+	},
+
 	next: function() {
 		var nextIndex = this.activeIndex;
 
@@ -57,10 +66,10 @@ provide(BEMDOM.decl(this.name,
 			nextIndex= 0;
 		}
 
-		this.newActiveItem(nextIndex);
+		this._newActiveItem(nextIndex);
 	},
 
-	newActiveItem: function(index) {
+	_newActiveItem: function(index) {
 		var items = this.elem('item'),
 			active = this.elem('item', 'active', true);
 
