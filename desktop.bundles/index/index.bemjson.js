@@ -1,12 +1,13 @@
 ({
     block: 'page',
-    title: 'Hello, World!',
+    title: 'МФТИ ВИДЕО',
     styles: [
         { elem: 'css', url: '_index.css' },
     ],
     scripts: [
 		{ elem: 'js', url: '_index.js'}
     ],
+	favicon: '/img/logo-square.png',
     content: [
 		{
 			elem: 'wrapper',
@@ -82,7 +83,7 @@
 					{
 						block: 'banner',
 						mods: { col: '3' },
-						header: 'Баннер',
+						header: 'МФТИ ВИДЕО',
 						text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.'
 
 					}
