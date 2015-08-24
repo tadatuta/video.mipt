@@ -1,6 +1,6 @@
 
 block('banner')(
-	match(function(){ return this.ctx.header && this.ctx.text; })(
+	match(function(){ return this.ctx.title && this.ctx.text; })(
 		content()(function(){
 			return {
 				elem: 'wrapper',
@@ -9,7 +9,7 @@ block('banner')(
 						block: 'title',
 						mods: { level: '1'},
 						mix: { block: 'banner', elem: 'title'},
-						content: this.ctx.header
+						content: this.ctx.title
 					},
 					{
 						tag: 'p',

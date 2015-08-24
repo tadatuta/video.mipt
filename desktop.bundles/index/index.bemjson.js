@@ -56,20 +56,20 @@
 					content: [
 						{
 							elem: 'item',
-							header: 'Внимание конкурс!',
+							title: 'Внимание конкурс!',
 							text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.',
 							url: '/img/photo1.jpg'
 						},
 						{
 							elem: 'item',
-							header: 'Второй слайд!',
+							title: 'Второй слайд!',
 							text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
 							url: 'http://mipt.ru/upload/medialibrary/63a/moscow_workshop.jpg'
 
 						},
 						{
 							elem: 'item',
-							header: 'Третий слайд!',
+							title: 'Третий слайд!',
 							text: 'Sit debitis illum eos voluptatum modi? Recusandae iure officia soluta ad ratione. Pariatur culpa doloribus quo odit esse. Placeat exercitationem tempora illum dolorum doloribus. Adipisci earum eum reprehenderit facilis ex',
 							url: 'http://cdn3.img22.ria.ru/images/92905/70/929057089.jpg'
 
@@ -80,7 +80,7 @@
 				{
 					block: 'banner',
 					mods: { col: '3' },
-					header: 'Баннер',
+					title: 'Баннер',
 					text: 'Сегментация рынка традиционно начинает охват аудитории. Геодезическая линия имеет интеграл по бесконечной области. Стратегия сегментации непосредственно допускает бюджет на размещение.'
 
 				}

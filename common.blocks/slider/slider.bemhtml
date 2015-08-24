@@ -14,7 +14,7 @@ block('slider')(
 						block: 'title',
 						mods: { level: '1' },
 						mix: { block: 'slider', elem: 'title' },
-						content: this.ctx.header
+						content: this.ctx.title
 					},
 					{
 						tag: 'p',
